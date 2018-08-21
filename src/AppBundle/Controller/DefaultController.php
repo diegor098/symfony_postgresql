@@ -26,7 +26,7 @@ class DefaultController extends Controller
     {
         $em=$this->getDoctrine()->getManager();
         $users= $em->getRepository("AppBundle:Users")->findAll();
-
+        //HOLA MUNDO
         var_dump($users);
         die();
     }
